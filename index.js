@@ -233,6 +233,12 @@
 // }
 // console.log(isJuft(4));
 
+// function reversed(n) {
+//     return n.split("").reverse().join("");
+// }
+// console.log(reversed("radar"));
+
+
 
 
 
