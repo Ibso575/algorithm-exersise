@@ -207,3 +207,18 @@
 // let nums = [1,4,5,4,7,8,6,]
 // console.log(search(nums,9));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
