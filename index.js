@@ -208,10 +208,30 @@
 // console.log(search(nums,9));
 
 
+// function removeUnli(n){
+//     return n.replace(/[aeiuo]/gi,'');
+// }
+
+// console.log(removeUnli("Frontend developer"));
+
+// function findMax(n){
+//     let max = n[1];
+
+//     for(let i = 1;i<n.length;i++){
+//         if(n[i]>max){
+//             max = n[i]
+//         }
+//     }
+//     return max
+// }
+
+// console.log(findMax([1,4,,9,6,5,5,5,5,5,7,8,9,4,8]));
 
 
-
-
+// function isJuft(num){
+//     return num % 2 == 0;
+// }
+// console.log(isJuft(4));
 
 
 
