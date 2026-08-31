@@ -239,15 +239,15 @@
 // console.log(reversed("radar"));
 
 
-function isJuft(num){
-    return num % 2 == 0;
-}
-console.log(isJuft(4));
+// function isJuft(num){
+//     return num % 2 == 0;
+// }
+// console.log(isJuft(4));
 
-function reversed(n) {
-    return n.split("").reverse().join("");
-}
-console.log(reversed("radar"));
+// function reversed(n) {
+//     return n.split("").reverse().join("");
+// }
+// console.log(reversed("radar"));
 
 
 
