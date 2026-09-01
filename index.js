@@ -240,7 +240,7 @@
 
 
 // function isJuft(num){
-//     return num % 2 == 0;
+//     return num % 2 == 0;app
 // }
 // console.log(isJuft(4));
 
