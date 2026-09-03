@@ -250,6 +250,47 @@
 // console.log(reversed("radar"));
 
 
+// interview dagi masala
+
+function customSortString(str) {
+  // 1. Har bir harf necha marta qatnashganini hisoblaymiz
+  const charMap = {};
+  for (let char of str) {
+    charMap[char] = (charMap[char] || 0) + 1;
+  }
+
+  // 2. Takrorlanmaydigan harflar ro'yxatini olamiz
+  const uniqueChars = Object.keys(charMap);
+
+  // 3. Shart bo'yicha saralaymiz
+  uniqueChars.sort((a, b) => {
+    // Agar takrorlanish soni har xil bo'lsa, kam uchraganini oldinga o'tkazamiz
+    if (charMap[a] !== charMap[b]) {
+      return charMap[a] - charMap[b];
+    }
+    // Takrorlanish soni teng bo'lsa, alifbo tartibida saralaymiz
+    return a.localeCompare(b);
+  });
+
+  // 4. Har bir harfni o'zining takrorlanish soniga ko'paytirib matn hosil qilamiz
+  let result = "";
+  for (let char of uniqueChars) {
+    result += char.repeat(charMap[char]);
+  }
+
+  return result;
+}
+
+// Tekshirib ko'ramiz:
+console.log(customSortString("ismim")); // Output: siimm
+console.log(customSortString("samarqand")); // Output: dmnqrsaaa
+
+
+
+
+
+
+
 
 
 
