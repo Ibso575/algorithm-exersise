@@ -353,27 +353,31 @@
 
 
 
-function Srt(obj){
-  return obj.sort((a,b) => b.age - a.age);
-}
-const obj = [
-  { name: "Ali", age: 20 },
-  { name: "Vali", age: 25 },
-  { name: "Soli", age: 18 }
-];
+// function Srt(obj){
+//   return obj.sort((a,b) => b.age - a.age);
+// }
+// const obj = [
+//   { name: "Ali", age: 20 },
+//   { name: "Vali", age: 25 },
+//   { name: "Soli", age: 18 }
+// ];
 
 
-console.log(Srt(obj));
+// console.log(Srt(obj));
 
 
 
 // function lcl(t){
-//   let a = t.sort((a,b) => a.localCompare(b))
-//   return a
+//   return  t.sort((a,b) => a.localeCompare(b))
+  
 // }
-// let d= lcl(["olma", "banan", "anor", "uzum"])
-// console.log(d);
+// let t = ["olma", "banan", "anor", "uzum"]
+// console.log(lcl(t));
 
-
-
+// function Orint(n){
+//   for(let i=1;i<=n;i++){
+//     console.log("*".repeat(i));
+//   }
+// }
+// Orint(4)
 
