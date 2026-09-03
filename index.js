@@ -252,47 +252,127 @@
 
 // interview dagi masala
 
-function customSortString(str) {
-  // 1. Har bir harf necha marta qatnashganini hisoblaymiz
-  const charMap = {};
-  for (let char of str) {
-    charMap[char] = (charMap[char] || 0) + 1;
-  }
+// function customSortString(str) {
+//   // 1. Har bir harf necha marta qatnashganini hisoblaymiz
+//   const charMap = {};
+//   for (let char of str) {
+//     charMap[char] = (charMap[char] || 0) + 1;
+//   }
 
-  // 2. Takrorlanmaydigan harflar ro'yxatini olamiz
-  const uniqueChars = Object.keys(charMap);
+//   // 2. Takrorlanmaydigan harflar ro'yxatini olamiz
+//   const uniqueChars = Object.keys(charMap);
 
-  // 3. Shart bo'yicha saralaymiz
-  uniqueChars.sort((a, b) => {
-    // Agar takrorlanish soni har xil bo'lsa, kam uchraganini oldinga o'tkazamiz
-    if (charMap[a] !== charMap[b]) {
-      return charMap[a] - charMap[b];
-    }
-    // Takrorlanish soni teng bo'lsa, alifbo tartibida saralaymiz
-    return a.localeCompare(b);
-  });
+//   // 3. Shart bo'yicha saralaymiz
+//   uniqueChars.sort((a, b) => {
+//     // Agar takrorlanish soni har xil bo'lsa, kam uchraganini oldinga o'tkazamiz
+//     if (charMap[a] !== charMap[b]) {
+//       return charMap[a] - charMap[b];
+//     }
+//     // Takrorlanish soni teng bo'lsa, alifbo tartibida saralaymiz
+//     return a.localeCompare(b);
+//   });
 
-  // 4. Har bir harfni o'zining takrorlanish soniga ko'paytirib matn hosil qilamiz
-  let result = "";
-  for (let char of uniqueChars) {
-    result += char.repeat(charMap[char]);
-  }
+//   // 4. Har bir harfni o'zining takrorlanish soniga ko'paytirib matn hosil qilamiz
+//   let result = "";
+//   for (let char of uniqueChars) {
+//     result += char.repeat(charMap[char]);
+//   }
 
-  return result;
+//   return result;
+// }
+
+// // Tekshirib ko'ramiz:
+// console.log(customSortString("ismim")); // Output: siimm
+// console.log(customSortString("samarqand")); // Output: dmnqrsaaa
+
+
+// let a  = {s:1,a:2,l:3,om:7}
+// console.log(Object.keys(a));
+
+
+// let son = "s,f,t,g,h"
+// console.log(son.sort());
+
+
+
+// function countunli(matn){
+//   let count = 0
+//   let text = "aeiouAEIOU"
+
+//   for(char of matn){
+//     if(text.includes(char)){
+//       count++;
+//     }
+//   }
+//   return count
+// }
+// console.log(countunli("salomdttuxtrxtu"));
+
+
+// const student = {
+//   name: "Ali",
+//   age: 20,
+//   course: 2
+// };
+// let keys =Object.keys(student)
+
+
+// console.log(keys);
+
+
+// const numbers = [5, 2, 8, 1, 9];
+// let a = numbers.sort((a,b)=>b-a)
+// console.log(a);
+
+// const names = ["Zuhra", "Anvar", "Bekzod", "Diyor"];
+// let ism = names.sort((a,b) => a.localeCompare(b))
+// console.log(ism);
+
+// function repeatWord(word,times){
+//   return(word + "-").repeat(times).slice(0,-1);
+// }
+// console.log(repeatWord("salom",3));
+
+
+// function countUppercase(matn){
+//   let count = 0
+//   let harf = "QWERTYUOIPASDFGHJKLZXCVBNM"
+//   for(char of matn){
+//     if(harf.includes(char)){
+//     count++;
+//     }
+//   }
+//   return count
+// }
+// console.log(countUppercase("AloMJ"));
+
+// function OBKey(a){
+//   return Object.keys(a)
+// }
+// console.log(OBKey({ olma: 5000, banan: 12000, uzum: 8000 }));
+
+
+
+function Srt(obj){
+  return obj.sort((a,b) => b.age - a.age);
 }
-
-// Tekshirib ko'ramiz:
-console.log(customSortString("ismim")); // Output: siimm
-console.log(customSortString("samarqand")); // Output: dmnqrsaaa
-
-
-
+const obj = [
+  { name: "Ali", age: 20 },
+  { name: "Vali", age: 25 },
+  { name: "Soli", age: 18 }
+];
 
 
-
+console.log(Srt(obj));
 
 
 
+// function lcl(t){
+//   let a = t.sort((a,b) => a.localCompare(b))
+//   return a
+// }
+// let d= lcl(["olma", "banan", "anor", "uzum"])
+// console.log(d);
 
 
 
