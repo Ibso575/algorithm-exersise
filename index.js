@@ -367,17 +367,17 @@
 
 
 
-// function lcl(t){
-//   return  t.sort((a,b) => a.localeCompare(b))
+function lcl(t){
+  return  t.sort((a,b) => a.localeCompare(b))
   
-// }
-// let t = ["olma", "banan", "anor", "uzum"]
-// console.log(lcl(t));
+}
+let t = ["olma", "banan", "anor", "uzum"]
+console.log(lcl(t));
 
-// function Orint(n){
-//   for(let i=1;i<=n;i++){
-//     console.log("*".repeat(i));
-//   }
-// }
-// Orint(4)
+function Orint(n){
+  for(let i=1;i<=n;i++){
+    console.log("*".repeat(i));
+  }
+}
+Orint(4)
 
