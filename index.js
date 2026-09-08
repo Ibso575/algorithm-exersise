@@ -346,51 +346,51 @@
 // }
 // console.log(countUppercase("AloMJ"));
 
-// function OBKey(a){
-//   return Object.keys(a)
-// }
-// console.log(OBKey({ olma: 5000, banan: 12000, uzum: 8000 }));
+function OBKey(a){
+  return Object.keys(a)
+}
+console.log(OBKey({ olma: 5000, banan: 12000, uzum: 8000 }));
 
 
 
-// function Srt(obj){
-//   return obj.sort((a,b) => b.age - a.age);
-// }
-// const obj = [
-//   { name: "Ali", age: 20 },
-//   { name: "Vali", age: 25 },
-//   { name: "Soli", age: 18 }
-// ];
+function Srt(obj){
+  return obj.sort((a,b) => b.age - a.age);
+}
+const obj = [
+  { name: "Ali", age: 20 },
+  { name: "Vali", age: 25 },
+  { name: "Soli", age: 18 }
+];
 
 
-// console.log(Srt(obj));
+console.log(Srt(obj));
 
 
 
-// function lcl(t){
-//   return  t.sort((a,b) => a.localeCompare(b))
+function lcl(t){
+  return  t.sort((a,b) => a.localeCompare(b))
   
-// }
-// let t = ["olma", "banan", "anor", "uzum"]
-// console.log(lcl(t));
+}
+let t = ["olma", "banan", "anor", "uzum"]
+console.log(lcl(t));
 
-// function Orint(n){
-//   for(let i=1;i<=n;i++){
-//     console.log("*".repeat(i));
-//   }
-// }
-// Orint(4)
+function Orint(n){
+  for(let i=1;i<=n;i++){
+    console.log("*".repeat(i));
+  }
+}
+Orint(4)
 
-// function falam(head){
-//   while(head != null && head.next != null){
-//     if(head.val == head.next.val){
-//       head.next == head.next.next
-//     }else{
-//       head = head.next
-//     }
-//   }
-//   return head
-// }
-// console.log(falam(1,2,3,4,5,1,2,));
+function falam(head){
+  while(head != null && head.next != null){
+    if(head.val == head.next.val){
+      head.next == head.next.next
+    }else{
+      head = head.next
+    }
+  }
+  return head
+}
+console.log(falam(1,2,3,4,5,1,2,));
 
 
