@@ -374,23 +374,23 @@
 // let t = ["olma", "banan", "anor", "uzum"]
 // console.log(lcl(t));
 
-// function Orint(n){
-//   for(let i=1;i<=n;i++){
-//     console.log("*".repeat(i));
-//   }
-// }
-// Orint(4)
+function Orint(n){
+  for(let i=1;i<=n;i++){
+    console.log("*".repeat(i));
+  }
+}
+Orint(4)
 
-// function falam(head){
-//   while(head != null && head.next != null){
-//     if(head.val == head.next.val){
-//       head.next == head.next.next
-//     }else{
-//       head = head.next
-//     }
-//   }
-//   return head
-// }
-// console.log(falam(1,2,3,4,5,1,2,));
+function falam(head){
+  while(head != null && head.next != null){
+    if(head.val == head.next.val){
+      head.next == head.next.next
+    }else{
+      head = head.next
+    }
+  }
+  return head
+}
+console.log(falam(1,2,3,4,5,1,2,));
 
 
