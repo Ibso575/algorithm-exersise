@@ -393,4 +393,4 @@
 // }
 // console.log(falam(1,2,3,4,5,1,2,));
 
-
+// its going very well
