@@ -394,3 +394,15 @@
 // console.log(falam(1,2,3,4,5,1,2,));
 
 // its going very well
+
+
+// 30kun algoritmik masalalar
+
+// function reversed(n){
+// let a = n.split("").reverse().join("")
+// return n === a ? true : false
+// }
+// console.log(reversed("radar"));
+
+
+
