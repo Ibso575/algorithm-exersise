@@ -404,5 +404,16 @@
 // }
 // console.log(reversed("radar"));
 
+function sum(num){
+    let target = 9;
+    for(let i = 0;i<=num.length;i++){
+        if(i.map((a) => (a[i]+a[i+1])=target)){
+            true
+        }else{
+            false
+        }
+    }
+}
+console.log(sum([2,7,11,15]));
 
 
