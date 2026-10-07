@@ -404,18 +404,18 @@
 // }
 // console.log(reversed("radar"));
 
-function sum(num){
-    let target = 9;
-    let result = []
-    for(let i = 0;i<num.length;i++){
-       for(let j = i+1;j<num.length;j++){
-        if(num[i]+num[j] == target){
-            result.push([i,j])
-        }
-       }
-    }
-    return result
-}
-console.log(sum([2,8,11,1,7]));
+// function sum(num){
+//     let target = 9;
+//     let result = []
+//     for(let i = 0;i<num.length;i++){
+//        for(let j = i+1;j<num.length;j++){
+//         if(num[i]+num[j] == target){
+//             result.push([i,j])
+//         }
+//        }
+//     }
+//     return result
+// }
+// console.log(sum([2,8,11,1,7]));
 
 
